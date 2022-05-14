@@ -83,13 +83,7 @@ const Login = (props) => {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    if (formIsValid) {
-      props.onLogin(emailState.value, passwordState.value);
-    } else if (!emailIsValid) {
-      alert("Please enter a valid email!");
-    } else {
-      null;
-    }
+    props.onLogin(emailState.value, passwordState.value);
   };
 
   return (

@@ -1,13 +1,8 @@
 import React, { useRef } from "react";
-import { useEffect } from "react/cjs/react.production.min";
 import styles from "./input.module.css";
 
 const Input = (props) => {
   const inputRef = useRef();
-
-  const activate = () => {
-    inputRef.current.focus();
-  };
 
   return (
     <div
